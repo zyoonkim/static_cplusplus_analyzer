@@ -1,4 +1,5 @@
 #include "StructAnalysis.h"
+#include "../utils/TypeMap.h"
 
 
 // ------------------------------------
