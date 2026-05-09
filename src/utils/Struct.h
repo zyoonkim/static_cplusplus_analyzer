@@ -3,7 +3,7 @@
 
 
 #include <string>
-
+#include <vector>
 
 
 struct StructElt{
@@ -15,5 +15,16 @@ struct StructElt{
 struct StructEltCompare{
     bool operator()(const StructElt & structElt1, const StructElt & structElt2) const;
 };
+
+struct StructInfo {
+    std::string name;
+    size_t size;
+    size_t alignment;
+    std::vector<StructElt> fields;
+};
+
+
+
+
 
 #endif
