@@ -4,5 +4,7 @@
 *test*
 
 src/loop_analysis
+include/loop_analysis
 
-Makefile
+build/bin
+build/obj
