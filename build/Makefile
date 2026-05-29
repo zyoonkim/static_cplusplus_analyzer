@@ -12,7 +12,7 @@ INCLUDE_ROOT = ../include
 BIN_DIR = bin
 OBJ_DIR = obj
 
-CXXFLAGS = -std=c++17 -O2 $(LLVM_CXXFLAGS) -I$(INCLUDE_ROOT)
+CXXFLAGS = -std=c++17 -O2 $(LLVM_CXXFLAGS) -I$(INCLUDE_ROOT) -Wall -Wextra -pedantic
 LDFLAGS = $(LLVM_LDFLAGS) $(CLANG_LIBS) $(CLANG_SYSTEM)
 
 LOOP_TARGET = $(BIN_DIR)/loop-analyzer
